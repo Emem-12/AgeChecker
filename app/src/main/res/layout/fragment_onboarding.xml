@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#581EBD"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingFragment">
+
+    <ImageView
+        android:id="@+id/illustrator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/illustration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/how_old"
+        />
+
+    <TextView
+        android:id="@+id/how_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How Old Am I"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/illustrator"
+        app:layout_constraintStart_toStartOf="@id/illustrator"
+        app:layout_constraintEnd_toEndOf="@id/illustrator"
+
+        />
+    <TextView
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check your current age based upon"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/how_old"
+        app:layout_constraintStart_toStartOf="@id/illustrator"
+        app:layout_constraintEnd_toEndOf="@id/illustrator"
+
+        />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your date of birth"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:maxLines="1"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/check"
+        app:layout_constraintStart_toStartOf="@id/illustrator"
+        app:layout_constraintEnd_toEndOf="@id/illustrator"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nav"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/round_image"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <ImageView
+        android:id="@+id/nav_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ic_navigate"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintStart_toStartOf="@id/nav"
+        app:layout_constraintEnd_toEndOf="@id/nav"
+
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

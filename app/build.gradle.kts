@@ -48,4 +48,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation (libs.circleimageview)      // use this or use the latest compile version. In case u get bug.
+
 }

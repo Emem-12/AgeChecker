@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val firstCategory= Category(R.drawable.menu,"How many days until my birthday?",android.R.color.holo_green_light)
+        val firstCategory= Category(R.drawable.ic_days,"How many days until my birthday?",android.R.color.holo_green_light)
         val secondCategory= Category(R.drawable.calender,"What day was I born?",android.R.color.holo_blue_light)
         val thirdCategory= Category(R.drawable.profile,"How old am I today?",android.R.color.holo_orange_dark)
 

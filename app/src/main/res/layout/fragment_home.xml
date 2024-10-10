@@ -26,7 +26,7 @@
         app:layout_constraintStart_toEndOf="@id/menu"
         app:layout_constraintTop_toTopOf="@id/menu" />
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile"
         android:layout_width="30dp"
         android:layout_height="30dp"
@@ -54,6 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:text="Your Date of Birth"
+        android:textStyle="bold"
         android:textColor="#fff"
         android:textSize="17sp"
         app:layout_constraintStart_toStartOf="@id/card1"
@@ -100,6 +101,7 @@
         android:text="@string/today_date"
         android:textColor="#fff"
         android:textSize="17sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/date_ofbirth"
         app:layout_constraintTop_toBottomOf="@id/date_ofbirth" />
 
